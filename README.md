@@ -56,7 +56,7 @@ A **robust SMS and Email spam classifier** using multiple machine learning model
 ---
 
 ## 🛠️ Project Structure
-
+```bash
 Email-Sms-Spam-Classifier/
 ├── 📁 data/ # Dataset storage
 │ └── spam.csv # SMS/Email dataset
@@ -78,6 +78,7 @@ Email-Sms-Spam-Classifier/
 ├── 📖 SETUP_GUIDE.md # Installation instructions
 ├── 🐙 GITHUB_SETUP.md # GitHub deployment guide
 └── 🚫 .gitignore # Ignore files
+```
 
 
 ---
@@ -89,3 +90,97 @@ Email-Sms-Spam-Classifier/
 ```bash
 git clone https://github.com/tarunkarimi/Email-Sms-Spam-Classifier.git
 cd Email-Sms-Spam-Classifier
+```
+
+2. **Create a virtual environment**
+```bash
+python -m venv venv
+# Activate:
+# Windows
+.\venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+```
+
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+4. **Install NLTK and download required datasets**
+ ```bash
+pip install nltk
+python -m nltk.downloader punkt stopwords
+```
+
+🎮 Usage Options
+🌐 Web Application (Recommended)
+```bash
+streamlit run app.py
+```
+Opens in your browser at http://localhost:8501
+
+Input SMS/Email text and get spam/ham prediction instantly
+
+🖥️ Command Line
+```bash
+python src/classifier.py --message "Free entry in 2 a wkly comp!"
+```
+Outputs spam probability and predicted label
+
+🧠 Advanced Features
+
+Ensemble Predictions: Combine multiple models for improved accuracy
+
+Text Preprocessing: Handles punctuation, casing, stopwords, lemmatization
+
+Performance Metrics: Accuracy, Precision, Recall, F1-score
+
+Quick Evaluation:
+```bash
+pytest tests/ -v
+```
+
+🔮 Future Enhancements
+
+Email attachments & HTML parsing
+
+Multi-lingual SMS support
+
+Integration with Gmail/Outlook APIs
+
+Real-time streaming of messages
+
+🤝 Contributing & Community
+🌟 How to Contribute
+
+1. Fork the repository
+```bash
+git clone https://github.com/tarunkarimi/Email-Sms-Spam-Classifier.git
+```
+2. Create a branch: git checkout -b feature/new-feature
+3. Make changes and add tests
+4. Commit changes: git commit -m "Add feature"
+5. Push branch: git push origin feature/new-feature
+6. Open a Pull Request
+
+🐛 Bug Reports
+
+Use GitHub Issues: https://github.com/tarunkarimi/Email-Sms-Spam-Classifier/issues
+
+💡 Feature Requests
+
+Use GitHub Issues or Discussions: https://github.com/tarunkarimi/Email-Sms-Spam-Classifier/discussions
+
+📧 Contact & Support
+
+Email: taruntejakarimi@gmail.com
+
+LinkedIn: Tarun Teja Karimi
+
+GitHub: tarunkarimi
+
+🏆 Project Statistics
+
+
+
