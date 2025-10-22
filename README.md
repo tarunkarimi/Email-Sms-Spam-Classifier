@@ -142,16 +142,7 @@ Option B: If no requirements.txt, install manually
 pip install numpy pandas matplotlib seaborn scikit-learn nltk wordcloud plotly streamlit
 ```
 
-#### 4️⃣ Download NLTK data (needed for text preprocessing)
-Open a Python shell and run:
-
-```bash
-import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
-```
-
-#### 5️⃣ Web Application 🌐 
+#### 5️4️⃣ Web Application 🌐 
 
 ```bash
 streamlit run streamlit_app.py
