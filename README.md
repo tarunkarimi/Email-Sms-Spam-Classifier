@@ -109,17 +109,49 @@ Email_SMS_Spam_Classifier/
 
 ## 🚀 Quick Start Guide
 
-### 📥 Installation
+#### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/tarunkarimi/Email-Sms-Spam-Classifier.git
 cd Email-Sms-Spam-Classifier
+```
+
+#### 2️⃣ Create and activate a virtual environment
+
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Linux / Mac
+python3 -m venv venv
+source venv/bin/activate
+```
+
+#### 3️⃣ Install required packages
+
+Option A: If requirements.txt exists
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 🎮 Usage Options
+Option B: If no requirements.txt, install manually
 
-#### 🌐 Web Application
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn nltk plotly streamlit
+```
+
+#### 4️⃣ Download NLTK data (needed for text preprocessing)
+Open a Python shell and run:
+
+```bash
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+```
+
+#### 5️⃣ Web Application 🌐 
 
 ```bash
 streamlit run streamlit_app.py
