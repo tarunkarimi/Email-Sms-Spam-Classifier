@@ -139,7 +139,7 @@ pip install -r requirements.txt
 Option B: If no requirements.txt, install manually
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn nltk plotly streamlit
+pip install numpy pandas matplotlib seaborn scikit-learn nltk wordcloud plotly streamlit
 ```
 
 #### 4️⃣ Download NLTK data (needed for text preprocessing)
