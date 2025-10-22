@@ -142,7 +142,7 @@ Option B: If no requirements.txt, install manually
 pip install numpy pandas matplotlib seaborn scikit-learn nltk wordcloud plotly streamlit
 ```
 
-#### 5️4️⃣ Web Application 🌐 
+#### 4️⃣ Web Application 🌐 
 
 ```bash
 streamlit run streamlit_app.py
