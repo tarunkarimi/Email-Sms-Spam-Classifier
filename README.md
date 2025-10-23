@@ -145,7 +145,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn nltk wordcloud plotly s
 #### 4️⃣ Web Application 🌐 
 
 ```bash
-streamlit run streamlit_app.py
+streamlit run app.py
 ```
 
 Opens at `http://localhost:8501` with an input box for real-time spam prediction.
