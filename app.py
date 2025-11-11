@@ -12,8 +12,15 @@ from wordcloud import WordCloud
 import plotly.express as px
 
 # Ensure required NLTK data is downloaded
-nltk.download('punkt')
-nltk.download('stopwords')
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt", quiet=True)
+
+try:
+    nltk.data.find("corpora/stopwords")
+except LookupError:
+    nltk.download("stopwords", quiet=True)
 
 # Initialize stemmer
 ps = PorterStemmer()
