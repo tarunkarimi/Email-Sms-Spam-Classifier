@@ -13,6 +13,7 @@ import plotly.express as px
 
 # Ensure required NLTK data is downloaded
 nltk.download('punkt')
+nltk.download('punkt_tab', quiet=True)
 nltk.download('stopwords')
 
 # Initialize stemmer
